@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ادخل الباسورد ❤️</title>
+<style>
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    font-family: Arial;
+    text-align:center;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.box{
+    background:#0f3460;
+    padding:30px;
+    border-radius:15px;
+}
+input{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    margin:10px;
+}
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#ff4d6d;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>اكتبي التاريخ المميز 💖</h2>
+    <input type="password" id="pass" placeholder="8/12/2025">
+    <br>
+    <button onclick="checkPass()">دخول</button>
+    <p id="error"></p>
+</div>
+
+<script>
+function checkPass(){
+    var password = document.getElementById("pass").value;
+    if(password === "8/12/2025"){
+        window.location.href = "love.html";
+    }else{
+        document.getElementById("error").innerText = "غلط يا لولتي 🥺";
+    }
+}
+</script>
+
+</body>
+</html>
